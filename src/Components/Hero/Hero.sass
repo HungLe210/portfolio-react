@@ -1,0 +1,52 @@
+.hero
+    display: flex
+    align-items: center
+    flex-direction: column
+    gap: 35px
+
+    & img
+        margin-top: 150px
+
+    & h1
+        text-align: center
+        width: 70%
+        font-size: 90px
+        font-weight: 600
+
+    & h1 span
+        background: linear-gradient(270deg, #DF8905 10%, #B415FF 100%)
+        background-clip: text
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+
+    & p
+        width: 50%
+        text-align: center
+        font-size: 24px
+        line-height: 40px
+
+    &-action
+        display: flex
+        align-items: center
+        gap: 25px
+        font-size: 24px
+        font-weight: 500
+        margin-bottom: 50px
+
+    &-connect
+        padding: 25px 45px
+        border-radius: 50px
+        background: linear-gradient(270deg, #DF8905 10%, #B415FF 100%)
+        cursor: pointer
+
+        &:hover
+            border: 2px solid white
+
+    &-resume
+        padding: 25px 75px
+        border-radius: 50px
+        border: 2px solid #fff
+        cursor: pointer
+
+        &:hover
+            border-color: #B415FF
