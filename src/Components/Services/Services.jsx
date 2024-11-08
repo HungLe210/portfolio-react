@@ -1,12 +1,10 @@
 import React from 'react'
 import './Services.sass'
-import theme_pattern from '../../assets/theme_pattern.svg'
-import Services_Data from '../../assets/services_data'
-import arrow_icon from '../../assets/arrow_icon.svg'
+import { theme_pattern, services_data, arrow_icon } from '../../assets'
 
 const Services = () => {
     return (
-        <div className='services'>
+        <div id='services' className='services'>
 
             <div className="services-title">
                 <h1>My Services</h1>
@@ -14,7 +12,7 @@ const Services = () => {
             </div>
 
             <div className="services-container">
-                {Services_Data.map((service, index) => {
+                {services_data.map((service, index) => {
                     return <div key={index} className="services-format">
                         <h3>{service.s_no}</h3>
                         <h2>{service.s_name}</h2>

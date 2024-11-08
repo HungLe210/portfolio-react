@@ -1,11 +1,14 @@
 import React from 'react'
 import './Hero.sass';
-import profile_img from '../../assets/profile_img.svg';
+import { profile_avatar, profile_img } from '../../assets'
+import ProfileImage from '../Specific-Components/ProfileImage/ProfileImage';
+
 
 const Hero = () => {
     return (
         <div className='hero'>
-            <img src={profile_img} alt="" />
+
+            <ProfileImage />
             <h1><span>Lies</span> Lies lies Lies liesLies liesLies liesLies lies</h1>
             <p>LIesliessoieslise</p>
             <div className='hero-action'>

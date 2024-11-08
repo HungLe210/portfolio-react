@@ -1,0 +1,18 @@
+.scroll
+    &-arrow
+        position: fixed
+        bottom: 50px
+        right: 50px
+        border: 2px solid white
+        border-radius: 50%
+        padding: 5px
+        font-size: 50px
+        color: white
+        &:hover
+            background: var(--button-color)
+.scroll
+    opacity: 0
+    transition: opacity 0.5s ease
+    z-index: 999
+    &.appear
+        opacity: 1

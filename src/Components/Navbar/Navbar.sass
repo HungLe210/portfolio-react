@@ -1,0 +1,55 @@
+.navbar
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin: 20px 170px
+
+    & img
+        max-width: 10%
+        object-fit: cover
+        shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff
+.nav
+    &-menu
+        display: flex
+        align-items: center
+        list-style: none
+        gap: 60px
+        font-size: 20px
+
+        & li
+            display: flex
+            flex-direction: column
+            gap: 5px
+            cursor: pointer
+            position: relative
+            & p
+                transition: text-shadow 0.3s ease
+                &.ping
+                    transform: scale(1.05)
+                    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff
+                    transition: 0.5s
+                &:hover
+                    transform: scale(1.05) translateY(-3px)
+                    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff
+                    transition: 0.5s
+            & img
+                width: 0
+                position: absolute
+                bottom: 0
+                right: 0
+                transition: 0.5s ease
+                z-index: -1
+                &.show
+                    width: 100%
+                    transition: width 0.5s ease
+
+    &-connect
+        padding: 20px 40px
+        border-radius: 50px
+        background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.6%)
+        font-size: 22px
+        cursor: pointer
+        transition: 0.5s
+
+        &:hover
+            transform: scale(1.05)
