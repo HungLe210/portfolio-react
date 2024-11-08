@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { profile_avatar } from '../../../assets'
+import profile_avatar from '../../../assets/profile_avatar.jpg'
 import './ProfileImage.sass'
 
 const ProfileImage = () => {
